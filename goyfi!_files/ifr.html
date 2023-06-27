@@ -1,0 +1,64 @@
+
+<!-- saved from url=(0029)https://www.codalo.it/ifr.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        
+        
+  </head>
+  <body>
+
+    
+
+
+  <title>Input Testo</title>
+  <style>
+    #output {
+      margin-top: 20px;
+    }
+  </style>
+
+
+  <h1>Inserisci quello che vuoi</h1>
+
+  <form>
+    <input type="text" placeholder="Inserisci qui" id="input1">
+    <input type="text" placeholder="Inserisci qui" id="input2">
+    <input type="text" placeholder="Inserisci qui" id="input3">
+    <input type="text" placeholder="Inserisci qui" id="input4">
+    <input type="text" placeholder="Inserisci qui" id="input5">
+    <input type="text" placeholder="Inserisci qui" id="input6">
+    <input type="text" placeholder="Inserisci qui" id="input7">
+    <button type="button" onclick="salvaValori()">Invia</button>
+  </form>
+
+  <div id="output"><h2>Valori inseriti:</h2>jhddt<br>hgkgfkf<br>hglg<br><br><br><br></div>
+
+  <script>
+    // Funzione per salvare i valori degli input in un array e visualizzarli
+    function salvaValori() {
+      var valori = [];
+
+      // Recupera i valori degli input e li aggiunge all'array
+      for (var i = 1; i <= 7; i++) {
+        var inputId = "input" + i;
+        var input = document.getElementById(inputId);
+        valori.push(input.value);
+      }
+
+      // Visualizza i valori nell'elemento di output
+      var output = document.getElementById("output");
+      output.innerHTML = "<h2>Valori inseriti:</h2>" + valori.join("<br>");
+    }
+  </script>
+
+
+
+    
+  
+
+</body></html>
